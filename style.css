@@ -1,0 +1,66 @@
+body {
+  background: rgb(85, 85, 85);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  display: inline-flex;
+}
+.grid {
+  width: 200px;
+  height: 400px;
+  background-color: rgb(7, 7, 7);
+  display: flex;
+  flex-wrap: wrap;
+  overflow: visible;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.tetromino {
+  background-color: yellow;
+}
+
+.mini-grid {
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: visible;
+}
+
+.mini-grid div {
+  width: 20px;
+  height: 20px;
+}
+
+button{
+    margin-bottom: 50px;
+    margin-left:10px ;
+    border: none;
+    color: black;
+    padding: .5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: orange;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.pop-up{
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  color: white;
+}
