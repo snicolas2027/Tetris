@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levels</title>
+    <style>
+        body {
+            background: black;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .gal {
+            display: flex;
+            justify-content: space-evenly;
+            background: rgba(0, 0, 0, 0.158);
+            border: 2px rgb(255, 255, 255) solid;
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .go {
+            display: flex;
+            flex-direction: column;
+            width: 45vw;
+
+            align-items: center;
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+
+        }
+
+        .play {
+            margin-bottom: 50px;
+            margin-left: 10px;
+            border: none;
+            color: black;
+            padding: .5rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            background-color: orange;
+            border-radius: 1rem;
+            cursor: pointer;
+            font-weight: 800;
+            width: 100%;
+        }
+
+        #g {
+            margin-bottom: 1rem;
+        }
+
+        #ph {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html"><button style="width: 100px; margin-bottom: 1rem;" class="play">Back</button></a>
+    <div class="gal">
+        <button id="white" onclick="one()"><img width="100px"
+                src="https://store-images.s-microsoft.com/image/apps.17321.997192fb-5fd4-499e-899c-00faf96d1550.200bace7-5519-4c85-8250-e077150f4fac.717d18e6-832d-4e9a-9e87-44d81c88ab6e"
+                alt=""></button>
+        <button id="gray" onclick="two()"><img width="100px" src="../img/three.png" alt=""></button>
+        <button id="rg" onclick="three()"><img width="100px" src="../img/tree.png" alt=""></button>
+        <button id="rb" onclick="four()"><img width="100px" src="../img/phallus.png" alt=""></button>
+        <button id="dp" onclick="five()"><img width="100px" height="50px" style="object-fit: cover;"
+                src="../img/last.png" alt=""></button>
+    </div>
+
+
+    <div id="bg">
+        <div class="container">
+            <div class="go">
+                <img id="g" width="300px"
+                    src="https://store-images.s-microsoft.com/image/apps.17321.997192fb-5fd4-499e-899c-00faf96d1550.200bace7-5519-4c85-8250-e077150f4fac.717d18e6-832d-4e9a-9e87-44d81c88ab6e"
+                    alt="">
+
+            </div>
+            <div class="description">
+                <h2 id="title">THE CHOSEN ONE</h2>
+                <p id="ph">The "chosen one block" is a one block piece. Does that mean its called a monomino?
+                    Nevertheless, the chose one should help you get out of sticky situations.</p>
+                <a id="a" href="level-1.html"><button class="play">Play</button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const lvl1 = document.getElementById('white')
+        const lvl2 = document.getElementById('gray')
+        const lvl3 = document.getElementById('rg')
+        const lvl4 = document.getElementById('rb')
+        const lvl5 = document.getElementById('dp')
+        const title = document.getElementById('title')
+        const phrg = document.getElementById('ph')
+        const g = document.getElementById('g')
+
+
+        function one() {
+            title.innerHTML = 'THE CHOSEN ONE';
+            phrg.innerHTML = "The 'chosen one block' is a one block piece. Does that mean its called a monomino? Nevertheless, the chose one should help you get out of sticky situations.";
+            g.src = ("https://store-images.s-microsoft.com/image/apps.17321.997192fb-5fd4-499e-899c-00faf96d1550.200bace7-5519-4c85-8250-e077150f4fac.717d18e6-832d-4e9a-9e87-44d81c88ab6e")
+            g.style.width = '300px'
+            document.getElementById('a').href = "level-1.html"
+        }
+        function two() {
+            title.innerHTML = 'TINY RICKY';
+            phrg.innerHTML = "Ricky but younger. Would this provide a challenge or would it make the game easier?";
+            g.src = ("../img/three.png")
+            g.style.width = '300px'
+            document.getElementById('a').href = "lvl2.html"
+        }
+        function three() {
+            title.innerHTML = 'TINY HERO';
+            phrg.innerHTML = "Just like Ricky, Hero became younger here :((";
+            g.src = ("../img/tree.png")
+            g.style.width = '300px'
+            document.getElementById('a').href = "lvl3.html"
+        }
+        function four() {
+            title.innerHTML = 'PHALLUS';
+            phrg.innerHTML = "No explanation needed, its a phallus block. This should provide a good challenge:))";
+            g.src = ("../img/phallus.png")
+            g.style.width = '300px'
+            document.getElementById('a').href = "lvl4.html"
+        }
+        function five() {
+            title.innerHTML = 'FINAL BOSS';
+            phrg.innerHTML = "The past four levels but together and faster";
+            g.src = ("../img/last.png")
+            g.style.width = '300px'
+            g.style.height = '205px'
+            g.style.objectFit = 'cover'
+            document.getElementById('a').href = "lvl5.html"
+
+        }
+    </script>
+</body>
+
+</html>
